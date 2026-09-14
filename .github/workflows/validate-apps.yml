@@ -12,6 +12,8 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    container:
+      image: registry.gitlab.com/kazam0180/pla-site-tool:testing
     steps:
       - name: Checkout
         uses: actions/checkout@v7
