@@ -58,7 +58,7 @@ jobs:
         run: |
           set -e
 
-          pla-site-tool > pla-site-tool.log 2>&1 &
+          pla-site-tool gen-site > pla-site-tool.log 2>&1 &
           PLA_PID=$!
 
           imgtool -p . -o ./public convert-screenshots > screenshots.log 2>&1 &
